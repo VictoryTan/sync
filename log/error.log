@@ -1,0 +1,1298 @@
+[ERROR][2020-01-04 11:11:36][com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:24)] 查询发生异常=======
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+### The error may exist in com/xdclass/middle/mapping/StudentMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select           id, name, sex, birth, department, add_time, data_status, deal_time         from student     where data_status = '10I'  limit ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:136)
+	at com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:22)
+	at com.xdclass.test.StudentTest.testList(StudentTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 26 more
+[ERROR][2020-01-04 11:27:14][com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:24)] 查询发生异常=======
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+### The error may exist in com/xdclass/middle/mapping/StudentMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select           id, name, sex, birth, department, add_time, data_status, deal_time         from student     where data_status = '10I'  limit ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:136)
+	at com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:22)
+	at com.xdclass.test.StudentTest.testList(StudentTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 26 more
+[ERROR][2020-01-04 11:28:51][com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:24)] 查询发生异常=======
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapping.StudentMapper.selectList
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapping.StudentMapper.selectList
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:136)
+	at com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:22)
+	at com.xdclass.test.StudentTest.testList(StudentTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapping.StudentMapper.selectList
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 26 more
+[ERROR][2020-01-04 11:30:12][com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:24)] 查询发生异常=======
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapping.StudentMapper.selectList
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapping.StudentMapper.selectList
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:136)
+	at com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:22)
+	at com.xdclass.test.StudentTest.testList(StudentTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapping.StudentMapper.selectList
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 26 more
+[ERROR][2020-01-04 11:32:05][com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:24)] 查询发生异常=======
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapping.StudentMapper.selectList
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapping.StudentMapper.selectList
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:136)
+	at com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:22)
+	at com.xdclass.test.StudentTest.testList(StudentTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapping.StudentMapper.selectList
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 26 more
+[ERROR][2020-01-04 11:32:09][com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:24)] 查询发生异常=======
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+### The error may exist in com/xdclass/middle/mapping/StudentMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select           id, name, sex, birth, department, add_time, data_status, deal_time         from student     where data_status = '10I'  limit ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:136)
+	at com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:22)
+	at com.xdclass.test.StudentTest.testList(StudentTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 26 more
+[ERROR][2020-01-04 11:37:32][com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:24)] 查询发生异常=======
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+### The error may exist in com/xdclass/middle/mapping/StudentMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select           id, name, sex, birth, department, add_time, data_status, deal_time         from student     where data_status = '10I'  limit ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:136)
+	at com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:22)
+	at com.xdclass.test.StudentTest.testList(StudentTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 26 more
+[ERROR][2020-01-04 11:43:59][com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:24)] 查询发生异常=======
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+### The error may exist in com/xdclass/middle/mapping/StudentMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select           id, name, sex, birth, department, add_time, data_status, deal_time         from student     where data_status = '10I'  limit ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:136)
+	at com.xdclass.busi.impl.QryBusiImpl.queryList(QryBusiImpl.java:22)
+	at com.xdclass.test.StudentTest.testList(StudentTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null' at line 6
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:536)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	... 26 more
+[ERROR][2020-01-04 11:52:35][com.xdclass.busi.impl.QryBusiImpl.lambda$modifyListStatus$0(QryBusiImpl.java:43)] 修改状态失败=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Data truncated for column 'birth' at row 1
+### The error may involve com.xdclass.middle.mapping.StudentMapper.updateByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: update student     set name = ?,       sex = ?,       birth = ?,       department = ?,       add_time = ?,       data_status = ?,       deal_time = ?     where id = ?
+### Cause: java.sql.SQLException: Data truncated for column 'birth' at row 1
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.QryBusiImpl.lambda$modifyListStatus$0(QryBusiImpl.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.QryBusiImpl.modifyListStatus(QryBusiImpl.java:35)
+	at com.xdclass.test.StudentTest.testUpdate(StudentTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.sql.SQLException: Data truncated for column 'birth' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 26 more
+[ERROR][2020-01-04 11:52:35][com.xdclass.busi.impl.QryBusiImpl.lambda$modifyListStatus$0(QryBusiImpl.java:43)] 修改状态失败=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Data truncated for column 'birth' at row 1
+### The error may involve com.xdclass.middle.mapping.StudentMapper.updateByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: update student     set name = ?,       sex = ?,       birth = ?,       department = ?,       add_time = ?,       data_status = ?,       deal_time = ?     where id = ?
+### Cause: java.sql.SQLException: Data truncated for column 'birth' at row 1
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.QryBusiImpl.lambda$modifyListStatus$0(QryBusiImpl.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.QryBusiImpl.modifyListStatus(QryBusiImpl.java:35)
+	at com.xdclass.test.StudentTest.testUpdate(StudentTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.sql.SQLException: Data truncated for column 'birth' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 26 more
+[ERROR][2020-01-04 11:55:53][com.xdclass.busi.impl.QryBusiImpl.lambda$modifyListStatus$0(QryBusiImpl.java:43)] 修改状态失败=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Data truncated for column 'birth' at row 1
+### The error may involve com.xdclass.middle.mapping.StudentMapper.updateByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: update student     set name = ?,       sex = ?,       birth = ?,       department = ?,       add_time = ?,       data_status = ?,       deal_time = ?     where id = ?
+### Cause: java.sql.SQLException: Data truncated for column 'birth' at row 1
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.QryBusiImpl.lambda$modifyListStatus$0(QryBusiImpl.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.QryBusiImpl.modifyListStatus(QryBusiImpl.java:35)
+	at com.xdclass.test.StudentTest.testUpdate(StudentTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.sql.SQLException: Data truncated for column 'birth' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 26 more
+[ERROR][2020-01-04 11:55:54][com.xdclass.busi.impl.QryBusiImpl.lambda$modifyListStatus$0(QryBusiImpl.java:43)] 修改状态失败=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Data truncated for column 'birth' at row 1
+### The error may involve com.xdclass.middle.mapping.StudentMapper.updateByPrimaryKey-Inline
+### The error occurred while setting parameters
+### SQL: update student     set name = ?,       sex = ?,       birth = ?,       department = ?,       add_time = ?,       data_status = ?,       deal_time = ?     where id = ?
+### Cause: java.sql.SQLException: Data truncated for column 'birth' at row 1
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.QryBusiImpl.lambda$modifyListStatus$0(QryBusiImpl.java:40)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.QryBusiImpl.modifyListStatus(QryBusiImpl.java:35)
+	at com.xdclass.test.StudentTest.testUpdate(StudentTest.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.sql.SQLException: Data truncated for column 'birth' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy6.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 26 more
+[ERROR][2020-01-04 15:28:31][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may involve com.xdclass.our.mapper.StudentMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into student      ( name,                       sex,                       birth,                       department,                       add_time )       values ( ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Field 'id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy3.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+[ERROR][2020-01-04 15:28:31][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:28:31][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may involve com.xdclass.our.mapper.StudentMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into student      ( name,                       sex,                       birth,                       department,                       add_time )       values ( ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Field 'id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy3.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+[ERROR][2020-01-04 15:28:31][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:30:09][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:30:09][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:30:09][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:30:09][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:33:17][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:33:17][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:33:17][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:33:17][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:33:48][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:33:48][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:33:48][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:34:01][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:34:01][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:34:01][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:34:01][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:36:51][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:36:51][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:37:41][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.our.mapping.StudentMapper.insertSelective
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:38:37][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:41:50][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may involve com.xdclass.our.mapping.StudentMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into student      ( name,                       sex,                       birth,                       department,                       add_time )       values ( ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Field 'id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy3.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+[ERROR][2020-01-04 15:41:51][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:41:53][com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:33)] 处理数据发生异常=======》
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+### The error may involve com.xdclass.our.mapping.StudentMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into student      ( name,                       sex,                       birth,                       department,                       add_time )       values ( ?,                       ?,                       ?,                       ?,                       ? )
+### Cause: java.sql.SQLException: Field 'id' doesn't have a default value
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Field 'id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:545)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:513)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:115)
+	at com.mysql.cj.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:1983)
+	at com.mysql.cj.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1826)
+	at com.mysql.cj.jdbc.PreparedStatement.execute(PreparedStatement.java:1153)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy3.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	... 8 more
+[ERROR][2020-01-04 15:41:53][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:35)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:44:07][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
+[ERROR][2020-01-04 15:44:26][com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:55)] 修改中间表状态失败========>
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:200)
+	at com.xdclass.busi.impl.DealBusiImpl.modifyMiddle(DealBusiImpl.java:52)
+	at com.xdclass.busi.impl.DealBusiImpl.lambda$deal$0(DealBusiImpl.java:31)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.xdclass.busi.impl.DealBusiImpl.deal(DealBusiImpl.java:24)
+	at com.xdclass.thread.Consumer.run(Consumer.java:22)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for com.xdclass.middle.mapper.StudentMapper.updateStatusById
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 8 more
